@@ -13,7 +13,7 @@ namespace XGame.Domain.Services
 
         public AutenticarJogadorResponse AutenticarJogador(AutenticarJogadorRequest request)
         {
-            throw new NotImplementedException();
+           
         }
     }
 }
