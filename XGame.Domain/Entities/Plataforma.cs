@@ -8,8 +8,5 @@ namespace XGame.Domain.Entities
 
         public string Nome { get; set; }
 
-        public int casa { get; set; }
-
-
     }
 }

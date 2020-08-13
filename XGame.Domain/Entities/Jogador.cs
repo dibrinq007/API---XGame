@@ -1,4 +1,7 @@
 ﻿using System;
+using XGame.Domain.Enum;
+using XGame.Domain.ValueObject;
+
 
 namespace XGame.Domain.Entities
 {
@@ -7,16 +10,15 @@ namespace XGame.Domain.Entities
 
         public Guid Id { get; set; }
 
-        public string PrimeiroNome { get; set; }
+        public Nome Nome { get; set; }     
 
-        public string UltimoNome { get; set; }
+        public Email Email { get; set; }        
 
-        public string Email { get; set; }
+        public int Senha { get; private set; }
 
-        public string Senha { get; set; }
+        public EnumSituacaoJogador Status { get; set; }
 
-        public int Status { get; set; }
-
+      
 
 
     }
