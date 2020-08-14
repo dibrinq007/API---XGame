@@ -3,14 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using XGame.Domain.Interfaces.Arguments;
 
 namespace XGame.Domain.Arguments.Jogador
 {
-    public class AdicionarJogadorResponse
+    public class AdicionarJogadorResponse : IResponse
     {
+
         public Guid Id { get; set; }
 
         public string Message { get; set; }
 
+        public static implicit operator Guid(AdicionarJogadorResponse v)
+        {
+            throw new NotImplementedException();
+        }
     }
+
+    
 }
